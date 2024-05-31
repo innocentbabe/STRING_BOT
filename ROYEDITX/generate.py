@@ -38,14 +38,14 @@ ask_ques = "**⬤ ᴄʜᴏᴏsᴇ ᴛʜᴇ sᴛʀɪɴɢ ᴡʜɪᴄʜ ʏᴏᴜ �
 buttons_ques = [
     [
         InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ1", callback_data="pyrogram1"),
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2", callback_data="pyrogram"),
+        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ᴠ2 ❄️", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ", callback_data="telethon"),
+        InlineKeyboardButton("🍁 ᴛᴇʟᴇᴛʜᴏɴ ❄️", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ", callback_data="telethon_bot"),
+        InlineKeyboardButton("🥀 ᴘʏʀᴏɢʀᴀᴍ ʙᴏᴛ", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("ᴛᴇʟᴇᴛʜᴏɴ ʙᴏᴛ 🌸", callback_data="telethon_bot"),
     ],
 ]
 
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**❖ ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**● ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ➥ ** @RoY_EdiTX\n● **ɴᴏᴛᴇ ➥ ** ᴅᴏɴ'ᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ʙᴇᴄᴀᴜsᴇ ʜᴇ ᴄᴀɴ ʜᴀᴄᴋ ʏᴏᴜʀ ᴀʟʟ ᴅᴀᴛᴀ. ᴀɴᴅ ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴊᴏɪɴ ➥ @THE_FRIENDZ 🥺"
+    text = f"**❖ ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**● ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ➥ ** @Infinity_Backup\n● **ɴᴏᴛᴇ ➥ ** ᴅᴏɴ'ᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ʙᴇᴄᴀᴜsᴇ ʜᴇ ᴄᴀɴ ʜᴀᴄᴋ ʏᴏᴜʀ ᴀʟʟ ᴅᴀᴛᴀ. ᴀɴᴅ ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴊᴏɪɴ ➥ @THE_FRIENDZ 🥺"
     try:
         if not is_bot:
             await client.send_message("me", text)
